@@ -1,3 +1,4 @@
 airflow/logs
 env/
 .idea/
+crawlers/logs
