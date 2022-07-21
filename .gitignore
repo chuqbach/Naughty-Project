@@ -1,2 +1,5 @@
 /crawler/logs
 /.idea
+airflow/logs
+env/
+__pycache__/
