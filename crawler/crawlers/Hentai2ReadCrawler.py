@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 from abc import ABC, abstractmethod
-from crawler.utils import dtype_convert
-from crawler.utils.logger import logger
+from utils import dtype_convert
+from utils.logger import logger
 
 
 class Crawler(ABC):
@@ -39,4 +39,5 @@ class Hentai2ReadCrawler(Crawler):
     def crawl(self):
         if self._check_connection():
             self._get_soup()
+            print(type(self.soup))
 
